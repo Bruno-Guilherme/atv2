@@ -5,6 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
 
   <body>
@@ -23,8 +27,8 @@
       <h1>LostTravel</h1>
     </header>
 
-    <div style="max-width: 1100px">
-      <div>
+    <main style="max-width: 1100px">
+      <section class="sobre">
         <div>
           <img
             src="imagens/quemSomos.jpg"
@@ -56,11 +60,11 @@
             laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </div>
-      </div>
+      </section>
 
       <hr />
 
-      <div>
+      <section class="pacotes">
         <div>
           <h1>Nossos Pacotes</h1>
           <br />
@@ -86,14 +90,14 @@
           <p>Crocodilos, tubarões, aranhas e tudo que pode te matar</p>
         </div>
 
-        <div class="w3-col l6 w3-padding-large">
-          <img src="imagens/viagemMundo.jpg" alt="Menu" style="width: 100%" />
+        <div>
+          <img src="imagens/viagemMundo.jpg" alt="Menu"/>
         </div>
-      </div>
+      </section>
 
       <hr />
 
-      <div>
+      <section class="contato">
         <h1>Contato</h1>
         <br />
         <p>
@@ -101,9 +105,12 @@
           podem ser solicitadas nos enviando uma mensagem.
         </p>
         <p><b>LostTravel, P. Sherman, 42 Wallaby Way, Sydney</b></p>
+        <!-- O telefone e o e-mail precisam ter os seus respectivos ícones-->
         <p>
           Pode entrar em contato por:<br />
+          <span class="material-symbols-outlined"> call </span>
           00553123-2323<br />
+          <span class="material-symbols-outlined"> mail </span>
           catering@catering.com<br />
           Ou, nos mande uma mensagem:
         </p>
@@ -121,11 +128,16 @@
           <p><input placeholder="Mensagem" required name="Message" /></p>
           <p><button>Enviar</button></p>
         </form>
-      </div>
-    </div>
+      </section>
+    </main>
 
+    <!--
+      O link para a AWS, no rodapé, deve redirecionar para o site oficial da amazon e, ao passar o
+mouse, mudar de cor. Além disso, após clicar no link, a cor deve permanecer a mesma da
+fonte.
+    -->
     <footer>
-      <p>Powered by <a>AWS</a></p>
+      <p>Powered by <a href="https://aws.amazon.com/pt/?nc2=h_lg">AWS</a></p>
     </footer>
   </body>
 </html>
