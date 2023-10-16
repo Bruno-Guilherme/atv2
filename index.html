@@ -12,8 +12,8 @@
   </head>
 
   <body>
-    <nav>
-      <a href="#home">LostTravel Company</a>
+    <nav >
+      <a class="title" href="#home">LostTravel Company</a>
       <div>
         <a href="#about">Sobre Nós</a>
         <a href="#menu">Viagens</a>
@@ -21,14 +21,14 @@
       </div>
     </nav>
 
-    <header>
+    <header id="home">
       <img src="imagens/ferias.jpg" alt="ferias" />
 
       <h1>LostTravel</h1>
     </header>
 
     <main style="max-width: 1100px">
-      <section class="sobre">
+      <section id="about" class="sobre">
         <div>
           <img
             src="imagens/quemSomos.jpg"
@@ -64,7 +64,7 @@
 
       <hr />
 
-      <section class="pacotes">
+      <section id="menu" class="pacotes">
         <div>
           <h1>Nossos Pacotes</h1>
           <br />
@@ -97,7 +97,7 @@
 
       <hr />
 
-      <section class="contato">
+      <section id="contact" class="contato">
         <h1>Contato</h1>
         <br />
         <p>
@@ -115,14 +115,15 @@
           Ou, nos mande uma mensagem:
         </p>
         <form action="/action_page.php" target="_blank">
-          <p><input placeholder="Nome" /></p>
-          <p><input placeholder="Quantas pessoas" /></p>
+          <p><input type="name" placeholder="Nome" /></p>
+          <p><input type="number" placeholder="Quantas pessoas" /></p>
           <p>
             <input
               placeholder="Data e hora"
               required
               name="date"
               value="2020-11-16T20:00"
+              type="date"
             />
           </p>
           <p><input placeholder="Mensagem" required name="Message" /></p>

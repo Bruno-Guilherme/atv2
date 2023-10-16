@@ -19,6 +19,14 @@ body {
     background-color:floralwhite;
 }
 
+@keyframes botoes {
+    0%, 100% {
+        background-color: aqua;
+    }
+    50% {
+        background-color: blueviolet;
+    }
+}
 
 nav {
   letter-spacing: 4px;
@@ -37,17 +45,18 @@ nav {
 
   box-shadow: 0 2px 5px;
   z-index: 10;
-
-
 }
 
 nav a {
-    padding: 10px;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    
 }
 
 nav a:hover {
     /* Mudança do BG dos links no navbar*/
-    background-color: red;
+    animation: botoes 5s ease-in-out infinite;
 }
 nav a:link, a:visited {
     color: black;
@@ -120,5 +129,22 @@ footer a:link, a:visited {
     flex-direction: column;
     margin: 0 auto;
     
-    width: 75vw;
+    width: 60vw;
+}
+.contato input {
+    border-style: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    background-color: floralwhite;
+}
+.contato button {
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: gray;
+    width: 100%;
+    text-align: center;
 }
