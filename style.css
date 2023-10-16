@@ -66,6 +66,19 @@ div a {
 }
 
 
+@keyframes pColor {
+    0%, 100% {
+        color: grey;
+    }
+    50% {
+        color: chartreuse;
+    }
+}
+.multiColor {
+    animation: pColor 2s linear infinite;
+}
+
+
 header {
     width: 100%;
 
